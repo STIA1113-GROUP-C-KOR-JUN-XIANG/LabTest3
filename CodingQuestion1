@@ -17,52 +17,21 @@ public class LabTest3 {
 
 	public static void countMethod(String[]word) {
 		String word1=word[0];
-		String word2=word[0];
-		String word3=word[0];
-		String word4=word[0];
-		String word5=word[0];
-		String word6=word[0];
+		String word2="x";
+		String word3="x";
 		int y=1;
-		int z=1;
+		int z=0;
 		int a=1;
-		int b=1;
-		int c=1;
-		int d=1;
 		for(int x=1; x<word.length; x++) {
 			if(word[x].equals(word1)) {
 				y++;
 			}else {
 				word2=word[x];
-				if(word[x].equals(word2)){
-					z++;
-				}else {
-					word[x]=word3;
-					if(word[x].equals(word3)){
-						a ++;
-					}else {
-						word[x]=word4;
-						if(word[x].equals(word4)){
-							b ++;
-				}else {
-					word[x]=word5;
-					if(word[x].equals(word5)){
-						c ++;
-			}else {
-				word[x]=word6;
-				if(word[x].equals(word6)){
-					d ++;
-		}
+				z++;		
 			}
-				}
-					}
-				}
-			}
-		}
+			
+	}
 		System.out.println(word1+", "+y);
 		System.out.println(word2+", "+z);
-		System.out.println(word3+", "+a);
-		System.out.println(word4+", "+b);
-		System.out.println(word5+", "+c);
-		System.out.println(word6+", "+d);
 	}
 }
